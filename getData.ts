@@ -12,7 +12,7 @@ export function getData(): string[] {
 	const testLines = testData.split("\n").map(getBody);
 	const trainLines = trainData.split("\n").map(getBody);
 
-	const lines = new Array().concat(testLines);
+	const lines = new Array().concat(testLines, trainLines);
 
 	return lines;
 }
